@@ -11,6 +11,15 @@ class mem_scoreboard extends uvm_scoreboard;
   
   
  
+  ///////////////////// Build phase /////////////////////
+  function build_phase(uvm_pahase phase);
+    super.build_phase(phase); 
+
+  endfunction
+  
+
+  
+  
 
 
   
