@@ -10,6 +10,15 @@ class mem_driver extends uvm_driver;
   endfunction
   
   
+  ///////////////////// Build phase /////////////////////
+  function build_phase(uvm_pahase phase);
+    super.build_phase(phase); 
+
+  endfunction
+  
+
+  
+  
   
   
 endclass
