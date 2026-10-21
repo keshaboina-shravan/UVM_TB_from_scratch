@@ -24,9 +24,9 @@ class mem_agent extends uvm_agent;
     super.build_phase(phase);
   
    /////// creating the object using factory method 
-    mem_driver= mem_driver::type_id::create("drv",this);  
-    mem_monitor = mem_monitor::type_id::create("mon",this);  
-mem_sequencer = mem_sequencer::type_id::create("seqr",this);  
+    drv = mem_driver::type_id::create("drv",this);  
+    mon = mem_monitor::type_id::create("mon",this);  
+    seqr = mem_sequencer::type_id::create("seqr",this);  
 
   endfunction
   
