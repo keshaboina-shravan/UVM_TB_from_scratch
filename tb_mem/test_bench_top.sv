@@ -37,7 +37,9 @@ module tb ;
     reset =1;
         #10 
     reset =0;
-    end 
+    end  
+    
+     ///
      initial begin 
  // settiong uvm conifg db 
     uvm_config_db#(virtual mem_intf)::set(
