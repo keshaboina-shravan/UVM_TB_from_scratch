@@ -13,6 +13,12 @@ class mem_monitor extends uvm_monitor;
   ///////////////////// Build phase /////////////////////
   function void build_phase(uvm_pahase phase);
     super.build_phase(phase); 
+ uvm_config_db#(virtual mem_intf)::get(
+      this ,    // for where it is getting
+       "",      // form whom we are getting "*" means for all 
+       "vif",     // feild name or  pass key 
+        intf      // value or the thing which we are getting
+     );
 
   endfunction
   
