@@ -38,7 +38,19 @@ module tb ;
         #10 
     reset =0;
     end 
-     
+     initial begin 
+ // settiong uvm conifg db 
+    uvm_config_db#(virtual mem_intf)::set(
+      uvm_root::get(),    // for where it is setting
+       "*",      // form whom we are setting "*" means for all 
+       "vif",     // feild name or  pass key 
+        intf      // value or the thing which we are setting
+     );
+
+// trigger the test
+
+run_test = ("");
+      end 
      // dump file 
 
 endmodule 
