@@ -20,7 +20,7 @@ class mem_agent extends uvm_agent;
   // create dirver, monitor and sequener  
   // phases    
   ///////////////////// Build phase /////////////////////
-  function build_phase(uvm_pahase phase);
+  function void  build_phase(uvm_pahase phase);
     super.build_phase(phase);
   
    /////// creating the object using factory method 

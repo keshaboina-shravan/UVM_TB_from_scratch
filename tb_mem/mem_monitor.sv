@@ -11,7 +11,7 @@ class mem_monitor extends uvm_monitor;
   
   
   ///////////////////// Build phase /////////////////////
-  function build_phase(uvm_pahase phase);
+  function void build_phase(uvm_pahase phase);
     super.build_phase(phase); 
 
   endfunction

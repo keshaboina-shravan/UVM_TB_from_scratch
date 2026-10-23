@@ -1,4 +1,6 @@
 `include "mem_agent.sv"
+`include "mem_scoreboard.sv"
+
 class mem_env extends uvm_env;
   // register to factory 
   `uvm_component_utils(mem_env) //factoryregistration
@@ -16,7 +18,7 @@ class mem_env extends uvm_env;
   // create agent and scoreboard 
   // phases    
   ///////////////////// Build phase /////////////////////
-  function build_phase(uvm_pahase phase);
+  function void build_phase(uvm_pahase phase);
     super.build_phase(phase);
   
    /////// creating the object using factory method 
