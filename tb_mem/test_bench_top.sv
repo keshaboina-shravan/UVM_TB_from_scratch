@@ -2,8 +2,9 @@
 // started writing uvm test bench 
 ////////////////////////////////////
 // need to include uvm machro 
-`include "uvm_macros.svh"
 `include "interface.sv"
+`include "package.sv"
+
 module tb ;
   
   // declere clk and rest 

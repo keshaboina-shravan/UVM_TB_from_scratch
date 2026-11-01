@@ -1,4 +1,4 @@
-`include "mem_env.sv"
+
 
 class mem_test extends uvm_test;
   // register to factory 

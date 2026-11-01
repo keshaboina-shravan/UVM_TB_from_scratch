@@ -1,6 +1,4 @@
-`include "mem_dirver.sv"
-`include "mem_monitor.sv"
-`include "mem_sequencer.sv"
+
 
 class mem_agent extends uvm_agent;
   // register to factory 

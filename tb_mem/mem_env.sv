@@ -1,5 +1,4 @@
-`include "mem_agent.sv"
-`include "mem_scoreboard.sv"
+
 
 class mem_env extends uvm_env;
   // register to factory 
