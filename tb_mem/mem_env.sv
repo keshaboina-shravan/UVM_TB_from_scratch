@@ -17,7 +17,7 @@ class mem_env extends uvm_env;
   // create agent and scoreboard 
   // phases    
   ///////////////////// Build phase /////////////////////
-  function void build_phase(uvm_pahase phase);
+  function void build_phase(uvm_phase phase);
     super.build_phase(phase);
   
    /////// creating the object using factory method 

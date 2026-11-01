@@ -12,7 +12,7 @@ class mem_driver extends uvm_driver;
   
   
   ///////////////////// Build phase /////////////////////
-  function void build_phase(uvm_pahase phase);
+  function void build_phase(uvm_phase phase);
     super.build_phase(phase); 
      // settiong uvm conifg db 
     uvm_config_db#(virtual mem_intf)::get(

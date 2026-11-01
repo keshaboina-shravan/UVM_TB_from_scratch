@@ -15,7 +15,7 @@ class mem_monitor extends uvm_monitor;
   
   
   ///////////////////// Build phase /////////////////////
-  function void build_phase(uvm_pahase phase);
+  function void build_phase(uvm_phase phase);
     super.build_phase(phase); 
         mon_ap = new("mon_ap", this);
  uvm_config_db#(virtual mem_intf)::get(

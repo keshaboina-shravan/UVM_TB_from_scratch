@@ -14,7 +14,7 @@ class mem_test extends uvm_test;
   mem_env env;
   // phases    
   ///////////////////// Build phase /////////////////////
-  function build_phase(uvm_pahase phase);
+  function build_phase(uvm_phase phase);
     super.build_phase(phase);
   
    /////// creating the object using factory method 

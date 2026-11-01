@@ -13,7 +13,7 @@ class mem_scoreboard extends uvm_scoreboard;
   
  
   ///////////////////// Build phase /////////////////////
-  function void  build_phase(uvm_pahase phase);
+  function void  build_phase(uvm_phase phase);
     super.build_phase(phase); 
         scb_aip = new("scb_aip", this);
 
