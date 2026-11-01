@@ -2,7 +2,7 @@
 // started writing uvm test bench 
 ////////////////////////////////////
 // need to include uvm machro 
-`include uvm_macros.svh
+`include "uvm_macros.svh"
 `include "interface.sv"
 module tb ;
   
@@ -31,7 +31,7 @@ module tb ;
   
   // geterente the clock 
   initial  clk =1'b1;
-  always #5 clk = ~clk
+  always #5 clk = ~clk;
   //reset
     initial begin
     reset =1;
