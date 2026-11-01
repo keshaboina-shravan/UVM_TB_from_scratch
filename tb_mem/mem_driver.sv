@@ -2,8 +2,9 @@ class mem_driver extends uvm_driver;
   // register to factory 
   `uvm_component_utils(mem_driver) //factoryregistration
   
-  
-    
+  mem_seq_item seq_item;
+  virtual mem_intf intf;
+
 // standard  construcetor 
   function new(string name ,uvm_component parent);
     super.new(name, parent);
