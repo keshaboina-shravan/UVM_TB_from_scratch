@@ -27,7 +27,14 @@ class mem_env extends uvm_env;
   
   endfunction
   
+   //////////////////////////////////connect phase//////////////////////
+  virtual function void connect_phase (uvm_phase phase);
+    //super.connect_phase(phase);
+     
+    agt.mon.analysis_port.connect(scb.analyasis_imp);
   
+  endfunction
+
   
   
   

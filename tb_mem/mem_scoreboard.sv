@@ -1,6 +1,7 @@
 class mem_scoreboard extends uvm_scoreboard;
   // register to factory 
   `uvm_component_utils(mem_scoreboard) //factoryregistration
+    uvm_analysis_imp #(mem_seq_item,mem_scoreboard) scb_aip; 
   
   
     
@@ -14,6 +15,7 @@ class mem_scoreboard extends uvm_scoreboard;
   ///////////////////// Build phase /////////////////////
   function void  build_phase(uvm_pahase phase);
     super.build_phase(phase); 
+        scb_aip = new("scb_aip", this);
 
   endfunction
 

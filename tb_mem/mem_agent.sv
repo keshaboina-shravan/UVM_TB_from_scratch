@@ -28,6 +28,17 @@ class mem_agent extends uvm_agent;
     mon = mem_monitor::type_id::create("mon",this);  
     seqr = mem_sequencer::type_id::create("seqr",this);  
 
+
+
+    //////////////////////////////////connect phase//////////////////////
+  virtual function void connect_phase (uvm_phase phase);
+    //super.connect_phase(phase);
+     
+    drv.seq_item_port.connect(seqr.seq_item_export);
+  
+  endfunction
+
+
   endfunction
   
   

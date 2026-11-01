@@ -4,7 +4,7 @@ class mem_driver extends uvm_driver;
   
   mem_seq_item seq_item;
   virtual mem_intf intf;
-
+//// driver has in built TLM port////////////////////// noo need to create a port we use inbuilt port 
 // standard  construcetor 
   function new(string name ,uvm_component parent);
     super.new(name, parent);
@@ -21,6 +21,13 @@ class mem_driver extends uvm_driver;
        "vif",     // feild name or  pass key 
         intf      // value or the thing which we are getting
      );
+//////////////////////////////////connect phase//////////////////////
+  virtual function void connect_phase (uvm_phase phase);
+    //super.connect_phase(phase);
+     
+    drv.seq_item_port.connect(seqr.seq_item_export);
+  
+  endfunction
 
 
   endfunction
