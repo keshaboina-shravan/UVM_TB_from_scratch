@@ -22,8 +22,8 @@ class mem_env extends uvm_env;
     super.build_phase(phase);
   
    /////// creating the object using factory method 
-    mem_agent = mem_agent::type_id::create("agt",this);  
-    mem_scoreboard = mem_scoreboard::type_id::create("scb",this);  
+    agt = mem_agent::type_id::create("agt",this);  
+    scb = mem_scoreboard::type_id::create("scb",this);  
   
   endfunction
   
